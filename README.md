@@ -38,10 +38,14 @@ const char* pass = "YOUR_WIFI_PASSWORD";
 String FIREBASE_URL = "Firebase RTDB URL";
 ```
 
-### MainActivity.kt
+### Android Kotlin Code
 ```cpp
-val databaseUrl = "URL_ของ_Firebase_ของคุณ"
+val databaseUrl = "Firebase RTDB URL"
 ```
+### google-services.json
+- **ลงทะเบียนแอปใน Firebase Console**
+- **ดาวน์โหลดไฟล์ google-services.json**
+- **วางไว้ในโฟลเดอร์ app/ ของโปรเจกต์ Android ก่อนทำการ Build**
 
-### 🖼 แผนผังการต่อวงจร (Circuit Diagram)
+## 🖼 แผนผังการต่อวงจร (Circuit Diagram)
 ![Wiring Diagram](./images/wiring-diagram.png)
