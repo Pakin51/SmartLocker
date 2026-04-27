@@ -29,3 +29,13 @@
 แตกต่างจากอุปกรณ์ IoT ทั่วไปที่ส่งข้อมูลดิบขึ้นคลาวด์ ระบบของเราตัดสินใจที่ฮาร์ดแวร์ปลายทางทันที:
 - **Package Detection:** วัตถุต้องบังเซนเซอร์ต่อเนื่องเกิน 3 วินาที ถึงจะนับว่าเป็น "พัสดุ" (ตัดปัญหาแสงกระพริบหรือฝุ่น)
 - **Security Logic:** ระบบสามารถแยกแยะความแตกต่างระหว่าง "การปลดล็อกปกติ" (สั่งผ่านแอป) และ "การงัดแงะ" (เซนเซอร์แสงทำงานโดยไม่มีคำสั่งจากแอป) ได้อย่างแม่นยำ
+
+## ⚙️ กำหนดค่าตัวแปร (Configuration Variables)
+```cpp
+const char* ssid = "YOUR_WIFI_NAME";
+const char* pass = "YOUR_WIFI_PASSWORD";
+String FIREBASE_URL = "Firebase RTDB URL";
+```
+
+### 🖼 แผนผังการต่อวงจร (Circuit Diagram)
+![Wiring Diagram](./images/wiring-diagram.png)
